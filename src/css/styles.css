@@ -1,0 +1,89 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+body {
+  margin: 0px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  justify-content: center;
+  background-color:#FFFFFF;
+  margin: 24px 156px 24px 156px;
+  padding: 0px;
+}
+
+.gallery-item {
+  flex-basis: calc(33.333% - 48px);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 408px;
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-right: 24px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 8px;
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  font-size: 16px;
+  border-radius: 4px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #808080
+}
+
+.feedback-form textarea {
+  height: 80px;
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4E75FF;
+  border: none;
+  cursor: pointer;
+  width: 95px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
