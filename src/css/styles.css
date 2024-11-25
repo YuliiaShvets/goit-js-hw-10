@@ -6,84 +6,177 @@
 */
 /* Common styles */
 @import url('./reset.css');
+
+
 body {
-  margin: 0px;
-}
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  list-style: none;
-  justify-content: center;
-  background-color:#FFFFFF;
-  margin: 24px 156px 24px 156px;
-  padding: 0px;
-}
-
-.gallery-item {
-  flex-basis: calc(33.333% - 48px);
-  width: 100%;
-  height: 100%;
-}
-
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 408px;
-  padding-left: 24px;
-  padding-top: 24px;
-  padding-right: 24px;
-}
-
-.feedback-form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  gap: 8px;
-  color: #2E2F42;
+  margin: 0;
+  width: 1440px;
+  height: 496px;
+  top: -892px;
+  left: -695px;
+  padding: 36px 929px 316px 156px;
+  gap: 0px;
+  opacity: 0px;
   font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-top: 36px;
+  padding-left: 156px;
 }
 
-.feedback-form input[type="email"],
-.feedback-form textarea {
-  font-size: 16px;
+
+.input{
+  width: 272px;
+  height: 36px;
   border-radius: 4px;
+  border: 1px solid #808080;
   outline: none;
-  height: 40px;
-  border: 1px solid #808080
 }
 
-.feedback-form textarea {
-  height: 80px;
+.input:hover {
+  border: 1px solid #000000
 }
 
-.feedback-form button {
-  padding: 10px 20px;
+
+.input:focus,
+.input:active {
+  border: 1px solid #4E75FF;
+}
+
+.text {
+  color: #808080;
+}
+
+.timer {
+  display: flex;
+  margin-top: 32px;
+  gap: 24px;
+  font-size: 40px;
+}
+
+.field1 {
+  text-align: center;
+  width: 55px;
+  height: 72px;
+  padding: 0;
+}
+
+.field2 {
+  text-align: center;
+  width: 61px;
+  height: 72px;
+  padding: 0;
+}
+
+.field3 {
+  text-align: center;
+  width: 76px;
+  height: 72px;
+  padding: 0;
+}
+
+.field4 {
+  text-align: center;
+  width: 82px;
+  height: 72px;
+  padding: 0;
+}
+
+
+.value {
+  display: block;
+  width: 55px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.label {
+  color: #2E2F42;
   font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #4E75FF;
-  border: none;
-  cursor: pointer;
-  width: 95px;
+  width: 44px;
+  height: 24px;
+}
+
+button {
+  width: 75px;
   height: 40px;
   padding: 8px 16px 8px 16px;
   border-radius: 8px;
+  border: none;
+  background-color: #4E75FF;
   font-family: Montserrat;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
   letter-spacing: 0.04em;
+  color: #FFFFFF;
 }
+
+.button:hover {
+  background-color: #6C8CFF;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-button {
+  width: 360px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  background-color: #4E75FF;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.form-button:hover {
+  background-color: #6C8CFF;
+
+}
+
+.label-text {
+  color: #2E2F42;
+}
+
+.label-input {
+  width: 360px;
+  height: 40px;
+  outline: none;
+   border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.label-input:active,
+.label-input:focus {
+  border: 1px solid #4E75FF;
+  }
+
+.label-input:hover {
+  border: 1px solid #000000
+}
+
+.label-text-input{
+  padding-bottom: 16px;
+}
+
+.fieldset {
+  width: 360px;
+  border: 1px solid #808080;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.fieldset:active{
+  border: 1px solid #000000
+}
+
+.label-state{
+  padding-top: 24px;
+  padding-right: 48px;
+  padding-bottom: 8px;
+  padding-left: 48px;
+}
+
