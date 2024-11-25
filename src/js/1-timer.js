@@ -7,12 +7,13 @@ import "izitoast/dist/css/iziToast.min.css";
 let userSelectedDate = null;
 let timerId = null;
 
-const startButton = document.querySelector('[data-start]');
+const button = document.querySelector('[data-start]');
 const datetimePicker = document.querySelector('#datetime-picker');
 const daysValue = document.querySelector('[data-days]');
 const hoursValue = document.querySelector('[data-hours]');
 const minutesValue = document.querySelector('[data-minutes]');
 const secondsValue = document.querySelector('[data-seconds]');
+
 
 
 const options = {
@@ -31,9 +32,9 @@ const options = {
         message: "Please choose a date in the future",
         position: "topRight",
       });
-      startButton.disabled = true;
+      button.disabled = true;
     } else {
-      startButton.disabled = false;
+      button.disabled = false;
     }
   },
 };
@@ -68,7 +69,7 @@ function updateTimerInterface({ days, hours, minutes, seconds }) {
 function startTimer() {
   const interval = 1000;
 
-  startButton.disabled = true;
+  button.disabled = true;
   datetimePicker.disabled = true;
 
   timerId = setInterval(() => {
@@ -84,7 +85,7 @@ function startTimer() {
         position: "topRight",
       });
       datetimePicker.disabled = false;
-      startButton.disabled = true;
+      button.disabled = true;
       return;
     }
 
@@ -94,4 +95,5 @@ function startTimer() {
 }
 
 
-startButton.addEventListener("click", startTimer);
+button.addEventListener("click", startTimer);
+

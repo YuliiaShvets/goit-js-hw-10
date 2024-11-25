@@ -17,7 +17,7 @@ body {
   padding: 36px 929px 316px 156px;
   gap: 0px;
   opacity: 0px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   line-height: 24px;
   letter-spacing: 0.04em;
   display: flex;
@@ -56,48 +56,28 @@ body {
   font-size: 40px;
 }
 
-.field1 {
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 55px;
-  height: 72px;
-  padding: 0;
-}
-
-.field2 {
-  text-align: center;
-  width: 61px;
-  height: 72px;
-  padding: 0;
-}
-
-.field3 {
-  text-align: center;
-  width: 76px;
-  height: 72px;
-  padding: 0;
-}
-
-.field4 {
-  text-align: center;
-  width: 82px;
-  height: 72px;
-  padding: 0;
 }
 
 
 .value {
-  display: block;
-  width: 55px;
-  height: 48px;
-  text-align: center;
-  line-height: 48px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 .label {
-  color: #2E2F42;
+  font-weight: 400;
   font-size: 16px;
-  width: 44px;
-  height: 24px;
+  line-height: 150%;
+  color: #2e2f42;
+  text-transform: uppercase;
 }
 
 button {
@@ -117,10 +97,19 @@ button {
   background-color: #6C8CFF;
 }
 
+.button:disabled {
+  background-color: #CFCFCF;
+  color:#989898;
+}
 
 .form {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+
+  max-width: 360px;
+  margin-top: 36px;
+  margin-left: 156px;
 }
 
 .form-button {
@@ -158,15 +147,21 @@ button {
   border: 1px solid #000000
 }
 
+.label-input:disabled {
+  color:#989898;
+}
+
 .label-text-input{
   padding-bottom: 16px;
 }
 
-.fieldset {
-  width: 360px;
+fieldset {
+  justify-content: center;
+  flex-direction: row;
+  gap: 48px;
   border: 1px solid #808080;
-  margin-bottom: 24px;
   border-radius: 4px;
+  width: auto;
 }
 
 .fieldset:active{
