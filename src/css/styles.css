@@ -80,7 +80,7 @@ body {
   text-transform: uppercase;
 }
 
-button {
+.start-button {
   width: 75px;
   height: 40px;
   padding: 8px 16px 8px 16px;
@@ -93,13 +93,14 @@ button {
   color: #FFFFFF;
 }
 
-.button:hover {
+.start-button:hover {
   background-color: #6C8CFF;
 }
 
-.button:disabled {
+.start-button:disabled {
   background-color: #CFCFCF;
-  color:#989898;
+  opacity: 0.5;
+  color: #808080;
 }
 
 .form {
