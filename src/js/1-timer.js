@@ -85,7 +85,6 @@ function startTimer() {
         position: "topRight",
       });
       
-      /*/datetimePicker.disabled = false;*/
       startButton.disabled = true;
       return;
     }
